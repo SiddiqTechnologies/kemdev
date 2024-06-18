@@ -1,11 +1,15 @@
-import LandingPage from './materialui/LandingPage';
-import './App.css';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { CssBaseline } from '@mui/material';
+import Hero from './siddiqtech/Hero';
+import Header from './siddiqtech/Header';
 
 function App() {
     return (
-        <>
-            <LandingPage />
-        </>
+        <ThemeProvider>
+            <CssBaseline />
+            <Header />
+            <Hero />
+        </ThemeProvider>
     );
 }
 
